@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>ShopReview • Avaliações Shopee</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🛍️ ShopReview
+</div>
+
+<nav>
+
+<a href="#">Início</a>
+<a href="#painel">Painel</a>
+<a href="#posts">Avaliações</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Avaliações sinceras de produtos da Shopee</h1>
+
+<p>
+Descubra se realmente vale a pena comprar aquele produto antes de gastar seu dinheiro.
+</p>
+
+</section>
+
+<section id="painel" class="painel">
+
+<h2>Painel de Publicação</h2>
+
+<div class="form">
+
+<div class="campo">
+<label>Título</label>
+<input id="titulo" type="text" placeholder="Ex: Fone Bluetooth Lenovo">
+</div>
+
+<div class="campo">
+<label>Imagem do Produto</label>
+<input id="imagem" type="text" placeholder="Cole a URL da imagem">
+</div>
+
+<div class="campo">
+<label>Link da Shopee</label>
+<input id="link" type="text" placeholder="https://shopee...">
+</div>
+
+<div class="linha">
+
+<div class="campo">
+<label>Preço Pago</label>
+<input id="preco" type="text" placeholder="R$ 49,90">
+</div>
+
+<div class="campo">
+<label>Tempo de Entrega</label>
+<input id="entrega" type="text" placeholder="8 dias">
+</div>
+
+</div>
+
+<div class="campo">
+
+<label>Nota</label>
+
+<select id="nota">
+
+<option value="5">⭐⭐⭐⭐⭐</option>
+<option value="4">⭐⭐⭐⭐</option>
+<option value="3">⭐⭐⭐</option>
+<option value="2">⭐⭐</option>
+<option value="1">⭐</option>
+
+</select>
+
+</div>
+
+<div class="campo">
+
+<label>Pontos Positivos</label>
+
+<textarea id="pros"
+placeholder="O que gostou do produto?"></textarea>
+
+</div>
+
+<div class="campo">
+
+<label>Pontos Negativos</label>
+
+<textarea id="contras"
+placeholder="O que não gostou?"></textarea>
+
+</div>
+
+<div class="campo">
+
+<label>Avaliação Completa</label>
+
+<textarea id="descricao"
+placeholder="Conte sua experiência..."></textarea>
+
+</div>
+
+<div class="botoes">
+
+<button id="publicar">
+Publicar Avaliação
+</button>
+
+<button id="limpar" class="secundario">
+Limpar Campos
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="posts">
+
+<h2 class="titulo-posts">
+Últimas Avaliações
+</h2>
+
+<div id="listaPosts" class="listaPosts">
+
+<!-- Posts aparecem aqui -->
+
+</div>
+
+</section>
+
+<template id="templatePost">
+
+<div class="card">
+
+<img class="foto">
+
+<div class="conteudo">
+
+<h2 class="titulo"></h2>
+
+<div class="nota"></div>
+
+<p class="preco"></p>
+
+<p class="entrega"></p>
+
+<div class="texto">
+
+<h4>✅ Pontos Positivos</h4>
+
+<p class="pros"></p>
+
+<h4>❌ Pontos Negativos</h4>
+
+<p class="contras"></p>
+
+<h4>📝 Avaliação</h4>
+
+<p class="descricao"></p>
+
+</div>
+
+<div class="acoes">
+
+<a class="comprar" target="_blank">
+Ver Produto
+</a>
+
+<button class="excluir">
+Excluir
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</template>
+
+<footer>
+
+<p>
+© 2026 ShopReview • Desenvolvido com ❤️
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
